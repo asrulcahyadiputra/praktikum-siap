@@ -1,4 +1,4 @@
-# CodeIgniter 4 Application Starter
+# PRAKTIKUM SIAP TEL-U
 
 ## What is CodeIgniter?
 
