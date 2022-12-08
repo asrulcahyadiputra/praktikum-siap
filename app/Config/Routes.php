@@ -37,6 +37,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'MainController::index');
 
+$routes->get('/master-departments', 'Master\DepartmentController::index');
+$routes->get('/departments', 'Master\DepartmentController::getData');
 
 $routes->get('/jabatan', 'Master\JabatanController::index');
 $routes->get('/jabatan-detail', 'Master\JabatanController::show');

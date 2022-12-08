@@ -116,7 +116,7 @@
                 </li>
 
                 <li>
-                    <h4 class="page-title-main">Dashboard</h4>
+                    <h4 class="page-title-main">PT SIAP 2022</h4>
                 </li>
 
             </ul>
@@ -180,8 +180,9 @@
                                 <span class="menu-arrow"></span>
                             </a>
                             <ul class="nav-second-level" aria-expanded="false">
-                                <li><a href="<?= site_url('jabatan') ?>">Jabatan</a></li>
-                                <li><a href="<?= site_url('karayawan') ?>">Karyawan</a></li>
+                                <li><a href="<?= site_url('master-departments') ?>">Departemen</a></li>
+                                <li><a href="<?= site_url('master-positions') ?>">Posisi</a></li>
+                                <li><a href="<?= site_url('master-employees') ?>">Karyawan</a></li>
                             </ul>
                         </li>
                         <!-- /.level 1 -->
