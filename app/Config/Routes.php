@@ -35,10 +35,8 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('/test', function() {
-    return 'Hello world';
-});
+$routes->get('/', 'MainController::index');
+
 
 $routes->get('/jabatan', 'Master\JabatanController::index');
 $routes->get('/jabatan-detail', 'Master\JabatanController::show');
