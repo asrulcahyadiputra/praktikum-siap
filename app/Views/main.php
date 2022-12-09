@@ -160,7 +160,6 @@
 
                     <ul class="metismenu" id="side-menu">
 
-
                         <!-- level 0 -->
                         <li>
                             <a href="<?= site_url('/') ?>">
@@ -170,7 +169,6 @@
                         </li>
 
                         <!-- /.level 0 -->
-
 
                         <!-- level 1 -->
                         <li>

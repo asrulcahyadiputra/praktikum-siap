@@ -48,7 +48,14 @@ $routes->get('test-api', 'Master\ProductController::getDataBankSampahBandungKulo
 $routes->get('/master-products', 'Master\ProductController::index');
 $routes->get('/products', 'Master\ProductController::getData');
 
+//master vendor --0304
+$routes->get('/master-vendor', 'Master\VendorController::index');
+$routes->get('/vendors', 'Master\VendorController::getData');
 
+
+$routes->get('/test', function() {
+    return "HELLO FROM ROUTES";
+});
 /*
  * --------------------------------------------------------------------
  * Additional Routing
