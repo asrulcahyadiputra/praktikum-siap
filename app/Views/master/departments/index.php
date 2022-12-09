@@ -84,6 +84,7 @@
 <?= $this->section('custom-js') ?>
 
 <script>
+
     const tableData = $('#table-data');
     const dataContent = $('#data-content');
     const formTambah = $('#form-tambah');

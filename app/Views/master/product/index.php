@@ -13,9 +13,9 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Kode</th>
-                                    <th>Nama</th>
-                                    <th>Satun</th>
+                                    <th>Nama Pengelola</th>
+                                    <th>Nama Unit Bank Sampah</th>
+                                    <th>Jumlah Anggota</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -42,26 +42,27 @@
     function getData() {
         $.ajax({
             type: 'get',
-            url : "<?=site_url('products')?>",
+            url : "<?=site_url('test-api')?>",
             dataType: 'json',
             success: function (res) {
-                var data = res.results;
+                console.log(res);
+                var data = res;
                 let html = '';
                 let no = 1;
                 for (let i = 0; i < data.length; i++){
                     let line = data[i];
                     html += `<tr>
                         <td>${no}</td>
-                        <td>${line.product_code}</td>
-                        <td>${line.product_name}</td>
-                        <td>${line.product_unit}</td>
+                        <td>${line.nama_pengelola}</td>
+                        <td>${line.nama_unit_bank_sampah}</td>
+                        <td>${line.jumlah_anggota}</td>
                     </tr>`
                     no++
                 }
                tableData.html(html);
             },
             error: function (err){
-                console.log(err);
+                console.log('error= ',err);
             }
         })
     }

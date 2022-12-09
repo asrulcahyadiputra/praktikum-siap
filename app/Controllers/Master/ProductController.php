@@ -4,6 +4,8 @@ namespace App\Controllers\Master;
 
 use App\Controllers\BaseController;
 use App\Models\master\Product;
+use GuzzleHttp\Client;
+
 
 class ProductController extends BaseController
 {
@@ -23,6 +25,20 @@ class ProductController extends BaseController
 
 
         return view('master/product/index', $data);
+    }
+
+    public function getDataBankSampahBandungKulon()
+    {
+        $client = new Client();
+
+        $response = $client->request('get', 'http://data.bandung.go.id/index.php/portal/api/ecce2563-418d-40b5-95e3-13ecc12cd16f');
+
+        $body = $response->getBody();
+
+        $data = json_decode($body);
+
+        return $this->response->setJSON($data->data, 200);
+
     }
 
     public function getData()

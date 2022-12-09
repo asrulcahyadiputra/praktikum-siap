@@ -43,6 +43,8 @@ $routes->get('/departments', 'Master\DepartmentController::getData');
 $routes->get('/jabatan', 'Master\JabatanController::index');
 $routes->get('/jabatan-detail', 'Master\JabatanController::show');
 
+$routes->get('test-api', 'Master\ProductController::getDataBankSampahBandungKulon');
+
 $routes->get('/master-products', 'Master\ProductController::index');
 $routes->get('/products', 'Master\ProductController::getData');
 
