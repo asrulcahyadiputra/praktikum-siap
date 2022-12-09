@@ -9,7 +9,7 @@ class MainController extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'SIAP 2022'
+            'title' => 'MySIAP'
         ];
 
         return view('main', $data);

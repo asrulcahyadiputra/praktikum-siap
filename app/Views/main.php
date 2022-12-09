@@ -103,7 +103,7 @@
                         <h2 class="text-primary">MySIAP</h2>
                     </span>
                     <span class="logo-sm">
-                        <h2 class="text-primary">SIAP</h2>
+                        <h2 class="text-primary">MyS</h2>
                     </span>
                 </a>
             </div>
@@ -163,7 +163,7 @@
 
                         <!-- level 0 -->
                         <li>
-                            <a href="<?= site_url('dashboard') ?>">
+                            <a href="<?= site_url('/') ?>">
                                 <i class="mdi mdi-view-dashboard"></i>
                                 <span>Dashboard</span>
                             </a>

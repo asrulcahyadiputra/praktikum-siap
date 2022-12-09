@@ -20,7 +20,7 @@ class DepartmentController extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Data Depatment - SIAP 2022'
+            'title' => 'Data Depatment - MySIAP'
         ];
 
         return view('master/departments/index',$data);

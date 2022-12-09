@@ -18,7 +18,7 @@ class JabatanController extends BaseController
     public function index()
     {
         $data = [
-            'title'         => 'Master Jabatan  - SIAP APP',
+            'title'         => 'Master Jabatan  - MySIAP',
             'jabatan'       => $this->jabatanModel->findAll()
         ];
 
